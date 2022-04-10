@@ -1,0 +1,171 @@
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Overpass', sans-serif;
+    font-size: 93.75%;
+}
+
+h2 {
+    color: white;
+    font-weight: 700;
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+p {
+    color:hsl(217, 12%, 63%);
+    line-height: 1.5;
+    margin-bottom: 25px;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: hsl(216, 12%, 8%);
+}
+
+main {
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.rating {
+    background: radial-gradient(circle at top, hsl(213, 19%, 18%) 10%, #171e28 50%);
+    width: 90%;
+    margin: 0 auto;
+    /* height: 40vh; */
+    border-radius: 20px;
+    padding: 30px;
+}
+
+.svg {
+    background-color: hsl(213, 19%, 18%);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+svg.star {
+    position: absolute;
+    transform: translateX(-50%) translateY(-50%);
+    top: 50%;
+    left: 50%;
+}
+
+button {
+    font-family: 'Overpass', sans-serif;
+    display: block;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+.button-flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+.button-flex button {
+    border-radius: 50%;
+    background-color: hsl(213, 19%, 18%);
+    border: none;
+    width: 40px;
+    height: 40px;
+    color: hsl(217, 12%, 63%);
+}
+
+.button-flex button:hover {
+    background-color: hsl(217, 12%, 63%);
+    color: white;
+}
+
+button.orange,
+button.prev-hover {
+    overflow: hidden;
+    position: relative;
+    color: white;
+    z-index: 1;
+}
+
+.orange::before,
+.prev-hover::before {
+    content: "";
+    z-index: -1;
+    left: -50%;
+    top: -50%;
+    position: absolute;
+    background-color: orange;
+    width: 90px;
+    height: 90px;
+    border-radius: 20px;
+    animation: thing 2s linear;
+}
+
+.prev-hover::before {
+    background-color: hsl(217, 12%, 63%);
+}
+
+button[type="submit"] {
+    background-color: hsl(25, 97%, 53%);
+    color: white;
+    letter-spacing: .25ch;
+    font-variant: small-caps;
+    font-size: 1.25rem;
+    width: 90%;
+    margin: 0 auto;
+    border-radius: 30px;
+    border: none;
+    height: 45px;
+    font-weight: 700;
+}
+
+button[type="submit"]:hover {
+    color: hsl(25, 97%, 53%);
+    background-color: white;
+}
+
+.thank {
+    background: radial-gradient(circle at top, hsl(213, 19%, 18%) 10%, #171e28 50%);
+    width: 90%;
+    margin: 0 auto;
+    border-radius: 20px;
+    padding: 30px;
+    /* height: 60vh; */
+}
+
+.show {
+    opacity: 1;
+    display: block;
+}
+
+.hide {
+    opacity: 0;
+    display: none;
+}
+
+footer {
+    color: hsl(217, 12%, 63%);
+}
+
+@keyframes thing {
+    0% {
+        top: 100%;
+        left: -50%;
+    }
+
+    100% {
+        top: -50%;
+        transform: rotate(360deg);
+    }
+}
