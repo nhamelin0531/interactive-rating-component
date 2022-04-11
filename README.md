@@ -32,7 +32,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Rating Component Solution](https://your-solution-url.com)
+- Solution URL: [Rating Component Solution](https://www.frontendmentor.io/solutions/interactive-rating-component-ryxgDxbE5)
 - Live Site URL: [Rating Component Challenge](https://rating-component-challenge.netlify.app)
 
 ## My process
