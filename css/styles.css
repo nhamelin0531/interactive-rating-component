@@ -110,7 +110,7 @@ button.prev-hover {
     width: 90px;
     height: 90px;
     border-radius: 20px;
-    animation: thing 2s linear;
+    animation: wave 2s linear;
 }
 
 .prev-hover::before {
@@ -175,7 +175,7 @@ footer {
     color: hsl(217, 12%, 63%);
 }
 
-@keyframes thing {
+@keyframes wave {
     0% {
         top: 100%;
         left: -50%;
